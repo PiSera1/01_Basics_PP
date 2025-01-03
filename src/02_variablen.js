@@ -1,0 +1,5 @@
+//  Zeilenkommentar
+
+/*
+    Blockkommentar  
+ */

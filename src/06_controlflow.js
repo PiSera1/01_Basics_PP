@@ -1,7 +1,7 @@
 // Entscheidungsstrukturen | control flow
 
 // Deklaration + Assignment
-const ageJohn = 32;
+const ageJohn = 30;
 const ageMark = 32;
 
 // Deklaration
@@ -48,4 +48,22 @@ console.log("------------------");
 // }
 
 /************  Ternäre (ternary) Schreibweise ************/
-console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+// console.log( (isJohnOlder) ? "John is older" : "Mark is older");
+
+/************ IF - ELSE IF  ************/
+// mit alternativen Fällen (älter, jünger, gleich alt)
+
+if (isJohnOlder)
+{
+    console.log("John ist älter!");
+} 
+// alternativer IF-Zweig 1...n  / weitere Fälle
+else if (isJohnEqual)
+{
+    console.log("John ist gleich alt!");
+} 
+// gemeinsame Alternative
+else 
+{
+    console.log("John ist jünger!");
+}

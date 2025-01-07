@@ -77,27 +77,44 @@ let job;
 // job = "diver"; // .. taucht im Rhein! 
 // job = "artist"; // .. malt ein Bild!
 // job = "pilot"; // .. macht etwas anderes! --> default
-job = "teacher"; // .. unterrichtet!
-job = "instructor"; // .. unterrichtet!
+// job = "teacher"; // .. unterrichtet!
+// job = "instructor"; // .. unterrichtet!
 
-switch (job) 
-{
-    case "driver": // job == "driver"
-        console.log(firstName + " fährt TAXI!");
-        break;
-    case "diver": // 
-        console.log(firstName + " taucht im Rhein!");
-        break;
-    case "artist": // 
-        console.log(firstName + " malt ein Bild!");
-        break;
-    case "teacher":
-    case "instructor":
-            console.log(firstName + " unterrichtet");
-        break;
+// switch (job) 
+// {
+//     case "driver": // job == "driver"
+//         console.log(firstName + " fährt TAXI!");
+//         break;
+//     case "diver": // 
+//         console.log(firstName + " taucht im Rhein!");
+//         break;
+//     case "artist": // 
+//         console.log(firstName + " malt ein Bild!");
+//         break;
+//     case "teacher":
+//     case "instructor":
+//             console.log(firstName + " unterrichtet");
+//         break;
    
 
-    default: // WICHTIG!!
-        console.log(firstName + " macht etwas anderes!");
+//     default: // WICHTIG!!
+//         console.log(firstName + " macht etwas anderes!");
+//         break;
+// }
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = false;
+const value = 1;
+
+switch (cond) {
+    case (value == 1):
+        console.log("Value hat den Wert 1.");
+        break;
+    case (value == 2):
+        console.log("Value hat den Wert 2.");
+        break;
+    default:
+        console.log("Value hat einen anderen Wert.");
         break;
 }

@@ -62,3 +62,13 @@ function ausgabeNamenSRP(firstName, secondName) {
      // 2. Funktionalität: string output
     console.log(outputStr)
 }
+
+
+/***** Funktionen 03b *****/
+
+
+     // 2. Funktionalität: string output
+
+function output(outputData) {
+}
+

@@ -3,25 +3,45 @@
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
 1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
+2. Auswahl Rechenart : check !
 3. Fkt. Grundrechenarten : check !
 4. Ausgabe in Konsole :  check!
 */
 
+
+const ERROR_STR_DIV = "Can't Divide by 0!";
+const ERROR_STR_CAL = "What happened ???";
+
+const prompt = require('prompt-sync')({sigint: true});
+
+startApp();
+function startApp() {
+    output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1() {
+    return parseInt(prompt("Num 1 = "));
+}
+
+function getNum2() {
+    return parseInt(prompt("Num 2 = "));
+}
+
+
+function getOp() {
+    return prompt("Operator eingeben: ");
+}
+
+
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-const ERROR_STR_CAL = "Can't divide by 0";
-const ERROR_STR_DIV = "Can't Divide by 0!";
-
-
-
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 
 function calculator(a,b,op) {
     switch (op) {

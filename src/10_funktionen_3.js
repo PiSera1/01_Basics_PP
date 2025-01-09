@@ -20,7 +20,7 @@ const INFO_STR_PRE_NUM = "Please insert ";
 const INFO_STR_POST_NUM = " number: ";
 
 /** Variable (Global)*/
-let isNotAborted; 
+let isNotAborted; // Abbruch mit Strg + C
 
 // application / App
 startApp();
@@ -151,7 +151,7 @@ function add(a,b) {
 // output("hello");
 // output(2);
 function output(outputData) {
-   console.log(typeof outputData);
+//    console.log(typeof outputData);
     if (typeof outputData == "number") {
         console.log(INFO_STR_RES + outputData); 
     } else {

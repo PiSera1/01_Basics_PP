@@ -8,6 +8,7 @@
 4. Ausgabe in Konsole :  check!
 */
 
+const ERROR_STR_DIV = "Can't Divide 0";
 
 output(add(3,2));
 output(sub(10,7));
@@ -41,8 +42,13 @@ function mult(a, b) {
 // module: division a / b | test:
 
 function div(a, b) {
-    return a / b;
-}
+
+    if (b != 0) {
+       return a / b
+     } else {
+        return ERROR_STR_DIV;
+     }
+ }
 
 
 

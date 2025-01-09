@@ -10,6 +10,33 @@
 
 
 
+// module: addition a + b | test:
+output(add(3,2));
+
+function add(a, b) {
+    return a + b;
+}
+
+//module: subtraction a - b | test:
+
+function sub(a, b) {
+    return a - b;
+}
+
+//module: multiplication a * b | test:
+
+function mult(a, b) {
+    return a * b;
+}
+
+function div(a, b) {
+    return a / b;
+}
+
+
+
+
+
 // module: output | test:
 // output("hi");
 // output(2);

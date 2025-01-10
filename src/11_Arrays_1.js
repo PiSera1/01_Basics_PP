@@ -38,7 +38,13 @@
 // }
 
 
-
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (let i = 0; i < arr.length; i++) 
+{
+   output(i); 
+   output(arr[i]);
+}
 
 
 /**
